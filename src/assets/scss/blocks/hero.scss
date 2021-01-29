@@ -1,0 +1,12 @@
+.hero {
+  // background-image: url('../../images/hero.png');
+  background-color: $green;
+
+  background-image: url('../../images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  min-height: 1000px;
+  width: 100%;
+}

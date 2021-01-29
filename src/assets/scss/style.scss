@@ -1,31 +1,16 @@
+//fonts
+@import './fonts.scss';
+
+// Bootsrap 5 Grid system
+// @import '../../../node_modules/bootstrap/scss/functions';
+// @import '../../../node_modules/bootstrap/scss/variables';
+// @import '../../../node_modules/bootstrap/scss/mixins';
+
+// @import '../../../node_modules/bootstrap/scss/containers';
+// @import '../../../node_modules/bootstrap/scss/grid';
+@import 'vendor/reset';
 @import 'vars';
 @import 'mixins';
-@import 'vendor/reset';
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  //   background-color: #181818;
-
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  font-size: 1.4rem;
-  line-height: 1.5;
-  //   color: $white;
-
-  &.no-scroll {
-    overflow: hidden;
-  }
-
-  //   @include breakpoint($tablet-bp) {
-  //     &.show-sidebar {
-  //       overflow: hidden;
-  //     }
-  //   }
-}
 
 *,
 *:before,
@@ -33,12 +18,17 @@ body {
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: none;
+}
+
+//typography
+@import 'typography.scss';
+
 /* Blocks */
+@import 'blocks/hero.scss';
